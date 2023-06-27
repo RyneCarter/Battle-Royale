@@ -1,0 +1,150 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(#584f49 50%, #514fd8 50%);
+}
+
+.container{
+  background-color: #fff;
+  width: 960px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.container h1{
+  font-size: 1.7rem;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.customSelect{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.golfDate{
+  border: solid 1px gray;
+}
+
+.holeNumbers{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.holeNumber{
+  padding: 8px;
+  border-radius: 8px 0 0 8px;
+  border: 1px solid #ccc;
+  background-color: gray;
+  color: white;
+}
+
+.hole{
+  padding: 8px;
+  border: 1px solid #ccc;
+  width: 30px;
+  text-align: center;
+}
+
+.total{
+  border-radius: 0 8px 8px 0;
+  padding: 8px;
+  border: 1px solid #ccc;
+  background-color: gray;
+  color: white;
+}
+
+.holeScores{
+  display: flex;
+  align-items: center;
+  padding-left: 115px;
+  margin-bottom: 24px;
+}
+
+.holeScore{
+  border-radius: 8px 0 0 8px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  background-color: gray;
+  color: white;
+}
+
+.amount{
+  width: 30px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+#total{
+  width: 50px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 0 8px 8px 0;
+  outline: none;
+}
+
+.submitBtn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button{  
+  padding: 8px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #514fd8;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover{
+  background-color: #514fd8;
+}
+
+.flexContainer {
+  display: flex;
+  margin-top: 24px;
+  width: 800px;
+}
+
+.listHeader{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.flexChild {
+  flex: 1;
+  margin-left: 140px;
+}  
+
+.flexChild:first-child {
+  margin-right: 20px;
+} 

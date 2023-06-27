@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Battle Royale</title>
+</head>
+<body>
+  <div class="container">
+    <h1>The Lakes at Castle Hills</h1>
+      <p>Select Name, Date and Enter Scores</p>
+      <form id="inputForm">
+        <div class="customSelect">
+          <input type="date" class="golfDate" id="golfDate1">
+          <select class="golfName" id="golfName1">
+            <option value="0">Select Name</option>
+            <option value="1">Golfer 1</option>
+            <option value="2">Golfer 2</option>
+            <option value="3">Golfer 3</option>
+            <option value="4">Golfer 4</option>
+            <option value="5">Golfer 5</option>
+            <option value="6">Golfer 6</option>
+            <option value="7">Golfer 7</option>
+            <option value="8">Golfer 8</option>
+            <option value="9">Golfer 9</option>
+          </select>
+        </div>
+        <div class="holeNumbers">
+          <div class="holeNumber">Hole Number</div>
+          <div class="hole">1</div>
+          <div class="hole">2</div>
+          <div class="hole">3</div>
+          <div class="hole">4</div>
+          <div class="hole">5</div>
+          <div class="hole">6</div>
+          <div class="hole">7</div>
+          <div class="hole">8</div>
+          <div class="hole">9</div>
+          <div class="hole">10</div>
+          <div class="hole">11</div>
+          <div class="hole">12</div>
+          <div class="hole">13</div>
+          <div class="hole">14</div>
+          <div class="hole">15</div>
+          <div class="hole">16</div>
+          <div class="hole">17</div>
+          <div class="hole">18</div>
+          <div class="total">Total</div>
+        </div>
+        <div class="holeScores">
+            <div class="holeScore">Hole Scores</div>
+              <td><input type="text" onblur="findTotal()" name="hole1score" class="amount"></td>               
+              <td><input type="text" onblur="findTotal()" name="hole2score" class="amount"></td>               
+              <td><input type="text" onblur="findTotal()" name="hole3score" class="amount"></td>               
+              <td><input type="text" onblur="findTotal()" name="hole4score" class="amount"></td>               
+              <td><input type="text" onblur="findTotal()" name="hole5score" class="amount"></td>               
+              <td><input type="text" onblur="findTotal()" name="hole6score" class="amount"></td>               
+              <td><input type="text" onblur="findTotal()" name="hole7score" class="amount"></td>               
+              <td><input type="text" onblur="findTotal()" name="hole8score" class="amount"></td>               
+              <td><input type="text" onblur="findTotal()" name="hole9score" class="amount"></td>               
+              <td><input type="text" onblur="findTotal()" name="hole10score" class="amount"></td>               
+              <td><input type="text" onblur="findTotal()" name="hole11score" class="amount"></td>               
+              <td><input type="text" onblur="findTotal()" name="hole12score" class="amount"></td>               
+              <td><input type="text" onblur="findTotal()" name="hole13score" class="amount"></td>               
+              <td><input type="text" onblur="findTotal()" name="hole14score" class="amount"></td>               
+              <td><input type="text" onblur="findTotal()" name="hole15score" class="amount"></td>               
+              <td><input type="text" onblur="findTotal()" name="hole16score" class="amount"></td>               
+              <td><input type="text" onblur="findTotal()" name="hole17score" class="amount"></td>               
+              <td><input type="text" onblur="findTotal()" name="hole18score" class="amount"></td>               
+              <td><input type="text" name="sum" id="total" readonly></td>        
+        </div>     
+        <div class="submitBtn">
+          <button type="submit" id="addToList">Enter Score</button>
+        </div>
+      </form>
+      <div class="flexContainer">
+        <div class="flexChild">
+          <h3 class="listHeader">Daily Win/Loss</h1>
+          <ol id="dailyList" class="dailyWin">
+          </ol>
+        </div>
+        <div class="flexChild">
+          <h3 class="listHeader">Season Win/Loss</h3>
+          <ol id="seasonList" class="seasonWin">
+          </ol>
+        </div>
+      </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
